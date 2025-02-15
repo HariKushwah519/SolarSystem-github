@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://media.istockphoto.com/id/1732963074/photo/starry-night-sky-in-space.jpg?s=612x612&w=0&k=20&c=AHcmpswk3g3toHSFt5yCV_1uzMZUaJl95p3UIgm8euo=");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.solar-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200vw;
+    height: 200vh;
+}
+
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-image: url("https://png.pngtree.com/png-vector/20230325/ourmid/pngtree-summer-real-texture-sun-png-image_6667751.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    animation: rotate 50s linear infinite;
+}
+
+
+.orbit {
+    position: absolute;
+    border: 2px dashed gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+
+#mercury-orbit { 
+    width: 280px;
+    height: 280px;
+    animation: rotate 3s linear infinite;
+}
+#venus-orbit { 
+    width: 480px;
+    height: 480px;
+    animation: rotate 5s linear infinite;
+}
+#earth-orbit { 
+    width: 700px;
+    height: 700px;
+    animation: rotate 7s linear infinite;
+}
+#mars-orbit { 
+    width: 920px;
+    height: 920px;
+    animation: rotate 10s linear infinite;
+}
+#jupiter-orbit { 
+    width: 1100px;
+    height: 1100px;
+    animation: rotate 15s linear infinite;
+}
+#saturn-orbit { 
+    width: 1350px;
+    height: 1350px;
+    animation: rotate 18s linear infinite;
+}
+#uranus-orbit { 
+    width: 1600px;
+    height: 1600px;
+    animation: rotate 22s linear infinite;
+}
+#neptune-orbit { 
+    width: 1900px;
+    height: 1900px;
+    animation: rotate 28s linear infinite;
+}
+
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+#mercury {
+    width: 35px;
+    height: 35px;
+    background-image: url("https://e7.pngegg.com/pngimages/754/179/png-clipart-messenger-mercury-planetary-science-orbit-planet-miscellaneous-atmosphere.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -20px;
+}
+#venus {
+    width: 42px;
+    height: 42px;
+    background-image: url("https://img.freepik.com/premium-psd/3d-planet-venus-set-transparent-background_699917-4807.jpg?w=360");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -20px;
+}
+#earth {
+    width: 50px;
+    height: 50px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -23px;
+}
+#mars {
+    width: 48px;
+    height: 48px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -22px;
+}
+#jupiter {
+    width: 60px;
+    height: 60px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28transparent%29.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -27px;
+}
+#saturn {
+    width: 45px;
+    height: 45px;
+    background-image: url("https://thumbs.dreamstime.com/b/realistic-saturn-planet-space-beautiful-illustration-picture-generative-ai-realistic-saturn-planet-space-beautiful-281671224.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -25px;
+}
+#uranus {
+    width: 40px;
+    height: 40px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -20px;
+}
+#neptune {
+    width: 40px;
+    height: 40px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/06/Neptune.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: -20px;
+}
+
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
